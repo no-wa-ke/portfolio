@@ -1,6 +1,7 @@
+// import Contentful from "./contentful.babel"
 var info = {
   'name': 'Kido Yoji',
-  'subtitle': '1989/07/26  Born in St. Mariannna university School of Medicine United States of America(2007-2011) Now in Tokyo',
+  'subtitle': '1989/07/26  Born in St. Mariannna university School of Medicine. United States of America(2007-2011) Now in Tokyo',
   'bio': 'On vacation... / Freelancer',
   'contact_links': [{
     'name': 'kidoyoji.xyz',
@@ -19,7 +20,7 @@ var info = {
     'title': '2015.03',
     'location': 'Master of Film and New Media. Tokyo University of the Arts, Japan.'
   }, {
-    'title': '2011.03 inc',
+    'title': '2011.03 ',
     'location': 'School of International Liberal Studies. Waseda University.',
     'date': '' // 'text': 'Providing an affordable design and build solution which allowed many clients to have a unique web presence'
 
@@ -56,7 +57,7 @@ var info = {
   }, {
     'title': 'Hakuhodo inc',
     'location': 'Producer',
-    'date': '2014 -2015' // 'text': 'Providing an affordable design and build solution which allowed many clients to have a unique web presence'
+    'date': '2015 -2015' // 'text': 'Providing an affordable design and build solution which allowed many clients to have a unique web presence'
 
   }],
   'projects': [{
@@ -153,7 +154,7 @@ function Projects(props) {
     className: "content-wrap"
   }, React.createElement("div", {
     className: "container"
-  }, React.createElement("h1", null, " Client / Personal / Music"), React.createElement("hr", null), props.info.map(function (project, index) {
+  }, React.createElement("h1", null, " Client / Personal "), React.createElement("hr", null), props.info.map(function (project, index) {
     return React.createElement("div", null, React.createElement(Project, {
       index: index,
       project_info: project

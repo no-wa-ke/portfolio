@@ -1,3 +1,14 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+class Contentful extends _react.default.Component {}
+
 var contentfulClient = contentful.createClient({
   accessToken: '0e3ec801b5af550c8a1257e8623b1c77ac9b3d8fcfc1b2b7494e3cb77878f92a',
   space: 'wl1z0pal05vy'
@@ -37,3 +48,6 @@ function renderImage(image, slug) {
     return '';
   }
 }
+
+var _default = Contentful;
+exports.default = _default;
