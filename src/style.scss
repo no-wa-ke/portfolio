@@ -1,0 +1,79 @@
+body {
+	font-family: 'Inconsolata';
+	h1 {
+		font-family: 'Merriweather';
+		font-size: 2rem;
+	}
+}
+
+a {
+	color: #292b2c;
+}
+
+header {
+	margin-top: 50px;
+	margin-bottom: 60px;
+	.header-left {
+		h2 {
+			margin: 0 5px;
+			font-size: 1.45rem;
+		}
+	}
+}
+
+.content-wrap {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.color-scheme {
+	display: flex;
+	@media screen and (max-width: 768px) {
+		height: 4px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	span {
+		display: inline-block;
+		flex-grow: 1;
+		height: 100px;
+	}
+}
+
+.project-text {
+	p:last-child {
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.project-images {
+	overflow-x: hidden;
+	white-space: nowrap;
+	.thumb {
+		overflow: hidden;
+		display: inline-block;
+		height: 100px;
+		width: 140px;
+		margin-right: 10px;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+		img {
+			cursor: pointer;
+			display: block;
+			width: 130%;
+			min-height: 100%;
+			-ms-interpolation-mode: bicubic;
+			&.tall {}
+			&.wide {}
+		}
+	}
+	img {
+		display: inline;
+	}
+}
+
+.featherlight-content {
+	padding: 0!important;
+	border-bottom: none!important;
+}
